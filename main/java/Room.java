@@ -14,6 +14,10 @@ public abstract class Room {
         return guest;
     }
 
+    public void setGuest(String guest){
+        this.guest = guest;
+    }
+
     public int getCapacity(){
         return capacity;
     }

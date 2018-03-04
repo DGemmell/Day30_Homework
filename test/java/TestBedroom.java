@@ -21,18 +21,24 @@ public class TestBedroom {
 //        suiteRoom = new Bedroom(RoomType.SUITE.getCapacity());
 //        penthouseRoom = new Bedroom(RoomType.PENTHOUSE.getCapacity());
 //        cottageRoom = new Bedroom(RoomType.COTTAGE.getCapacity());
-        bedroom = new Bedroom("Debbie Gemmell",100, 90, "P1","Penthouse");
+        bedroom = new Bedroom("Debbie Gemmell",1000, 90, "P1","Penthouse");
 
     }
 
     @Test
     public void canGetCapacity(){
-        assertEquals(100, bedroom.capacity);
+        assertEquals(1000, bedroom.capacity);
     }
 
     @Test
     public void canGetGuest(){
         assertEquals("Debbie Gemmell", bedroom.guest);
+    }
+
+//    Check with instructors why this test is failing.
+    @Test
+    public void canChangeGuest(){
+        assertEquals("Sandra Gemmell", bedroom.guest);
     }
 
     @Test
