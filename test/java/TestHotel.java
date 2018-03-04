@@ -25,7 +25,7 @@ public class TestHotel {
     @Test
     public void canCheckInGuest(){
         hotel.checkInGuest(rooms);
-        hotel.checkOutGuest(Hotel);
+        hotel.checkOutGuest(rooms);
         assertEquals(0, hotel.bedroomCapacity);
     }
 
