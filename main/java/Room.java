@@ -1,4 +1,5 @@
 public abstract class Room {
+//This is my abstract class Room which will extend to bedroom, conf room and dining room classes.
 
     String guest;
     int capacity;
