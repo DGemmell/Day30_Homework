@@ -14,12 +14,12 @@ public class TestConferenceRoom {
 
     @Test
     public void canGetConfRoomRate(){
-        assertEquals(500, conferenceRoom.getconfRoomRate());
+        assertEquals(500, conferenceRoom.getConfRoomRate());
     }
 
     @Test
     public void canGetConfRoomName(){
-        assertEquals("The Muirend Suite", conferenceRoom.getconfRoomName());
+        assertEquals("The Muirend Suite", conferenceRoom.getConfRoomName());
     }
 
 

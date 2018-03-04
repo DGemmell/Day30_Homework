@@ -9,11 +9,11 @@ public class TestGuest {
 
     @Before
     public void before(){
-        guest = new Guest("bobgemmell@hotmail.co.uk 07725005543");
+        guest = new Guest("Bobby Day", 07725005543);
     }
 
     @Test
     public void canGetGuestContact(){
-        assertEquals("bobgemmell@hotmail.co.uk 07725005543", guest.guestContact);
+        assertEquals(07725005543, guest.guestContact);
     }
 }
