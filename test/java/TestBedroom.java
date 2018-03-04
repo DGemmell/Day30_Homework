@@ -25,7 +25,7 @@ public class TestBedroom {
 //        suiteRoom = new Bedroom(RoomType.SUITE.getCapacity());
 //        penthouseRoom = new Bedroom(RoomType.PENTHOUSE.getCapacity());
 //        cottageRoom = new Bedroom(RoomType.COTTAGE.getCapacity());
-        bedroom = new Bedroom("Debbie Gemmell",1000, 90, "P1","Penthouse");
+        bedroom = new Bedroom("Sandra Gemmell",1000, 90, "P1","Penthouse");
 
     }
 
@@ -36,13 +36,13 @@ public class TestBedroom {
 
     @Test
     public void canGetGuest(){
-        assertEquals("Debbie Gemmell", bedroom.guest);
+        assertEquals("Sandra Gemmell", bedroom.guest);
     }
 
 //    Check with instructors why this test is failing when i change the expected result to another name.
     @Test
     public void canChangeGuest(){
-        assertEquals("Debbie Gemmell", bedroom.guest);
+        assertEquals("Sandra Gemmell", bedroom.guest);
     }
 /// i had originally planned for room rate as a double but my assertequals had score through it.
 //    i changed to int and void but maybe need to understand what a double double is.
