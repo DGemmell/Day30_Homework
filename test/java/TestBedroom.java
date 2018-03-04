@@ -6,10 +6,22 @@ import static org.junit.Assert.assertEquals;
 public class TestBedroom {
 
     Bedroom bedroom;
+//    Bedroom singleRoom;
+//    Bedroom doubleRoom;
+//    Bedroom familyRoom;
+//    Bedroom suiteRoom;
+//    Bedroom penthouseRoom;
+//    Bedroom cottageRoom;
 
     @Before
     public void before(){
-        bedroom = new Bedroom("Debbie Gemmell",100, 90.00, "P1","Penthouse");
+//        singleRoom = new Bedroom(RoomType.SINGLE.getCapacity());
+//        doubleRoom = new Bedroom(RoomType.DOUBLE.getCapacity());
+//        familyRoom = new Bedroom(RoomType.FAMILY.getCapacity());
+//        suiteRoom = new Bedroom(RoomType.SUITE.getCapacity());
+//        penthouseRoom = new Bedroom(RoomType.PENTHOUSE.getCapacity());
+//        cottageRoom = new Bedroom(RoomType.COTTAGE.getCapacity());
+        bedroom = new Bedroom("Debbie Gemmell",100, 90, "P1","Penthouse");
 
     }
 
@@ -25,7 +37,7 @@ public class TestBedroom {
 
     @Test
     public void canGetRoomRate(){
-        assertEquals(90.00, bedroom.getRoomRate());
+        assertEquals(90, bedroom.getRoomRate());
     }
 
     @Test
@@ -37,4 +49,9 @@ public class TestBedroom {
     public void canGetRoomType(){
         assertEquals("Penthouse", bedroom.getRoomType());
     }
+
+//    @Test
+//    public void canGetFamilyCapacity(){
+//        assertEquals(5, familyRoom);
+//    }
 }
