@@ -7,7 +7,7 @@ public class ConferenceRoom extends Room {
 
 //class constructor for conference room with super guest and capacity.
     public ConferenceRoom(String guest, int capacity, String confRoomName, int confRoomRate) {
-        super(guest, capacity);
+        super(capacity);
         this.confRoomName = confRoomName;
         this.confRoomRate = confRoomRate;
     }

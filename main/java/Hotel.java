@@ -3,16 +3,13 @@ import java.util.ArrayList;
 public class Hotel {
 //i initially thought that
     String hotelName;
-    private ArrayList<Guest> guestNames;
     private ArrayList<Room> rooms;
     public int bedroomCapacity;
 
 
-    public Hotel(String hotelName, int bedroomCapacity){
-        this.guestNames = new ArrayList<>();
+    public Hotel(String hotelName){
         this.rooms = new ArrayList<>();
         this.hotelName = hotelName;
-        this.bedroomCapacity = bedroomCapacity;
     }
 
     public String gethotelName(){
@@ -30,14 +27,20 @@ public class Hotel {
 //  I think i have this wrong but this was my thinking.
 //    1.Check in a new guest into room.
 //    2.If the number of rooms is less than capacity then add a new guest using the rooms arraylist(name and capacity)
-    public void checkInGuest(Room guest){
+    public void checkInGuest(Guest guest){
         if (getNumberOfBedrooms() < this.bedroomCapacity){
-            rooms.add(guest);
+//            declaring a new variable named room which will equal index position 0
+            Room room= rooms.get(0);
+//            then add a new guest to a room with guest argument.
+            room.addGuest(guest);
         }
     }
 
-    public Room checkOutGuest(){
-        return rooms.remove(0);
+    public void checkOutGuest(){
+        Room room = rooms.get(0);
+//        write a remove guest method
+
+        room.removeGuest();
     }
 
 

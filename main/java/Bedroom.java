@@ -8,8 +8,8 @@ public class Bedroom extends Room {
     private String roomType;
 
 //class constructor cmd n with super constructor guest and capacity.
-    public Bedroom(String guest, int capacity, int roomRate, String roomNumber, String roomType){
-        super(guest, capacity);
+    public Bedroom(int capacity, int roomRate, String roomNumber, String roomType){
+        super(capacity);
         this.roomRate = roomRate;
         this.roomNumber = roomNumber;
         this.roomType = roomType;
